@@ -5,7 +5,7 @@ let signUpBtn=document.querySelector(".button button");
 
 const pattern={
     name:/^[a-z]([a-z0-9]|(\s[a-z0-9])){5,19}$/i,
-    email:/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i,
+    email:/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,7}$/i,
     pass:/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
 }
 function validation(input,regex){
@@ -58,6 +58,7 @@ signUpBtn.addEventListener("click",function(){
     inputEmail.value = "";
     inputPass.value = "";
 })
+
 
 
 
