@@ -49,12 +49,15 @@ signUpBtn.addEventListener("click",function(){
             usersList.push(newUser);
             localStorage.setItem("allUsers", JSON.stringify(usersList));
             feedBack.innerHTML = "Registration Successful!";
-            feedBack.style.color = "green";
+            feedBack.classList.add("text-success")
+            feedBack.classList.remove("d-none");
+            feedBack.classList.add("d-block");
         }
     }
     inputName.value = "";
     inputEmail.value = "";
     inputPass.value = "";
 })
+
 
 
