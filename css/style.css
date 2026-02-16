@@ -9,6 +9,8 @@ body{
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
+    overflow: hidden;
+    width: 100%;
 }
 .container {
     background-color: white;
@@ -49,4 +51,5 @@ body{
 }
 .form-control:focus ~ .icon i{
     display: none !important;
+
 }
